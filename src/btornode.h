@@ -2,7 +2,7 @@
  *
  *  Copyright (C) 2007-2009 Robert Daniel Brummayer.
  *  Copyright (C) 2007-2015 Armin Biere.
- *  Copyright (C) 2012-2019 Aina Niemetz.
+ *  Copyright (C) 2012-2020 Aina Niemetz.
  *  Copyright (C) 2012-2017 Mathias Preiner.
  *
  *  This file is part of Boolector.
@@ -226,6 +226,10 @@ struct BtorArgsNode
   BTOR_BV_ADDITIONAL_NODE_STRUCT;
 };
 typedef struct BtorArgsNode BtorArgsNode;
+
+/*------------------------------------------------------------------------*/
+
+bool btor_node_is_bv (Btor *btor, const BtorNode *exp);
 
 /*------------------------------------------------------------------------*/
 
